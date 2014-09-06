@@ -13,10 +13,20 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"What is your name? ");
+        char cstring[40];
+        scanf("%s", cstring);
         
-    }
+        NSString *firstName = [NSString stringWithCString:cstring encoding:NSUTF8StringEncoding];
+        // Write to stdout
+        fprintf(stdout, "%s\n", [firstName UTF8String]);
+        // Display current date and time
+        NSDate *currentDate = [NSDate date];
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"HH:MM:SS"];
+        NSString *timeString = [formatter stringFromDate:currentDate];
+        NSLog(@"%@", timeString);
+        }
     return 0;
 }
 
