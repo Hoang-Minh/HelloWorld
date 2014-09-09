@@ -95,8 +95,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5508387719BB022700B95F4F /* Build configuration list for PBXNativeTarget "HelloWorld" */;
 			buildPhases = (
-				5508386519BB022700B95F4F /* Sources */,
 				5508386619BB022700B95F4F /* Frameworks */,
+				5508386519BB022700B95F4F /* Sources */,
 				5508386719BB022700B95F4F /* CopyFiles */,
 			);
 			buildRules = (
@@ -253,6 +253,7 @@
 				5508387919BB022700B95F4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
